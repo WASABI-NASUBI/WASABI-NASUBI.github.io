@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Artist Name</title>
+  <meta name="description" content="Art Portfolio & Shop">
+
+  <!-- Open Graph (SNSシェア用 → config.js の値に合わせて手動で更新) -->
+  <meta property="og:title" content="Artist Name">
+  <meta property="og:description" content="Art Portfolio & Shop">
+  <meta property="og:image" content="images/og-image.jpg">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ========================================================
+       Navigation
+       ======================================================== -->
+  <nav class="nav" id="nav">
+    <a href="#" class="nav-logo" id="site-name">ARTIST NAME</a>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#works">Works</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#" id="nav-shop-link" class="nav-cta" target="_blank" rel="noopener">Shop →</a></li>
+    </ul>
+    <button class="nav-toggle" id="nav-toggle" aria-label="メニューを開く">
+      <span></span>
+    </button>
+  </nav>
+
+  <!-- ========================================================
+       Hero
+       ======================================================== -->
+  <section class="hero" id="hero">
+    <div class="hero-bg" id="hero-bg"></div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">Art Portfolio</p>
+      <h1 class="hero-title" id="hero-name">ARTIST NAME</h1>
+      <p class="hero-tagline" id="hero-tagline">Art &amp; Photography</p>
+      <a href="#" id="hero-shop-link" class="btn btn-primary" target="_blank" rel="noopener">
+        Shop on STORES
+      </a>
+    </div>
+  </section>
+
+  <!-- ========================================================
+       Works / Gallery
+       ======================================================== -->
+  <section class="section" id="works">
+    <div class="container">
+      <h2 class="section-title">Works</h2>
+      <div class="filter-bar" id="filter-bar"></div>
+      <div class="gallery" id="gallery"></div>
+    </div>
+  </section>
+
+  <!-- ========================================================
+       About
+       ======================================================== -->
+  <section class="section section-dark" id="about">
+    <div class="container about-grid" id="about-grid">
+      <div class="about-image" id="about-image-wrap">
+        <img src="" id="about-photo" alt="Artist photo">
+      </div>
+      <div class="about-text">
+        <h2 class="section-title">About</h2>
+        <p class="about-bio" id="about-bio"></p>
+        <div class="about-links">
+          <a href="#" id="about-instagram" target="_blank" rel="noopener">Instagram</a>
+          <a href="#" id="about-stores" target="_blank" rel="noopener">STORES Shop</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================
+       Footer
+       ======================================================== -->
+  <footer class="footer">
+    <p id="footer-copy"></p>
+    <div class="footer-links">
+      <a href="#" id="footer-stores" target="_blank" rel="noopener">STORES</a>
+      <a href="#" id="footer-instagram" target="_blank" rel="noopener">Instagram</a>
+    </div>
+  </footer>
+
+  <script src="config.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
