@@ -14,7 +14,7 @@ const CONFIG = {
     bio:   "作家紹介文をここに書いてください。",
   },
   colors: {
-    accent: "#cc0000",
+    accent: "#f6d32d",
   },
   works: [
 
