@@ -17,6 +17,17 @@ const CONFIG = {
     accent: "#f6d32d",
   },
   works: [
-
+    {
+      id: 1772776203169,
+      title: "TEST",
+      category: "グッズ",
+      medium: "JPG",
+      size: "280x480",
+      year: "2026",
+      price: "18000",
+      image: "images/img_1772776146999.jpeg",
+      storesUrl: "",
+      sold: false,
+    }
   ],
 };
