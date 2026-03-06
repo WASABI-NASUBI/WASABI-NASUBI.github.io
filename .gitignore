@@ -1,2 +1,13 @@
 node_modules/
 data.json
+
+# サーバー側ファイル（GitHub Pages には不要）
+server.js
+start-admin.sh
+package.json
+package-lock.json
+admin/
+
+# 誤混入ファイル
+*.gpg
+*.sources
