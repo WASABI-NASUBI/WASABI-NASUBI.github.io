@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title id="page-title">Profile</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style-v2.css">
+</head>
+<body>
+
+  <!-- カスタムカーソル -->
+  <div class="cursor-dot"  id="cursor-dot"></div>
+  <div class="cursor-ring" id="cursor-ring"></div>
+
+  <!-- ナビゲーション -->
+  <nav class="nav" id="nav">
+    <a href="index-v2.html" class="nav-logo" id="site-name">ARTIST</a>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index-v2.html#works">Works</a></li>
+      <li><a href="profile.html" style="color:var(--off-black)">Profile</a></li>
+      <li><a href="#" id="nav-shop" class="nav-shop" target="_blank" rel="noopener">Shop →</a></li>
+    </ul>
+    <button class="nav-toggle" id="nav-toggle" aria-label="メニュー">
+      <span></span>
+    </button>
+  </nav>
+
+  <!-- プロフィール ヒーロー -->
+  <section class="profile-hero" id="profile-hero">
+    <div class="profile-hero-inner">
+      <span class="profile-label" id="p-label">Profile</span>
+      <h1 class="profile-name" id="p-name"></h1>
+      <div class="profile-hero-line" id="p-line"></div>
+    </div>
+  </section>
+
+  <!-- イントロ: 写真 + 自己紹介 -->
+  <section class="section" id="profile-intro">
+    <div class="profile-intro-inner">
+      <div class="profile-photo-col reveal">
+        <img id="p-photo" src="" alt="Artist photo">
+      </div>
+      <div class="profile-text-col reveal">
+        <span class="profile-artist-label">Artist</span>
+        <h2 class="profile-artist-name" id="p-title"></h2>
+        <p class="profile-bio-text" id="p-bio"></p>
+        <div class="profile-social-links">
+          <a href="#" id="p-ig"     target="_blank" rel="noopener">Instagram</a>
+          <a href="#" id="p-stores" target="_blank" rel="noopener">STORES Shop</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ステートメント (暗い背景) -->
+  <section class="section section-dark" id="profile-statement">
+    <div class="profile-statement-inner">
+      <span class="about-label">Statement</span>
+      <blockquote class="profile-quote reveal" id="p-statement"></blockquote>
+    </div>
+  </section>
+
+  <!-- Works へのCTA -->
+  <section class="profile-cta" id="profile-cta">
+    <a href="index-v2.html#works" class="profile-works-link">
+      <span>View Works</span>
+      <div class="profile-works-line"></div>
+    </a>
+  </section>
+
+  <!-- フッター -->
+  <footer class="footer">
+    <p id="footer-copy"></p>
+    <div class="footer-links">
+      <a href="#" id="footer-stores" target="_blank" rel="noopener">STORES</a>
+      <a href="#" id="footer-ig"     target="_blank" rel="noopener">Instagram</a>
+    </div>
+  </footer>
+
+  <script src="config.js"></script>
+  <script src="profile.js"></script>
+</body>
+</html>
